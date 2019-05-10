@@ -21,6 +21,9 @@
                         height: 150,
                         frameborder:0
                     });
+
+                    vid.css('margin-bottom', '-71px');
+
                     vid.appendTo('#div-img');
                     //les vidéos ne s'affichent pas, essayer de trouver une solution
                 }

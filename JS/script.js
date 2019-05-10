@@ -51,7 +51,8 @@
 
         $("#datepicker").datepicker({
             dateFormat: "dd/mm/yy",
-            //minDate former une date javascript minimum à partir du 16/05/1995
+            //former une date minimum à partir du 16/05/1995
+            minDate: new Date(1995,5,16),
             maxDate: new Date(),
             //la date max doit être la veille du jour
 

@@ -10,20 +10,24 @@
             url: buildUrl (year, month, day),
             success: function(result){
                 if (result.media_type == "video") {
+
+
+                // <iframe id="apod_vid_id" type="text/html" width="640" height="385" frameborder="0"></iframe>
+
                     const vid =  $('<iframe/>', {
                         src: result.url,
                         type: "text/html",
-                        width: "640",
-                        height: "385",
-                        frameborder:"0"
+                        width: 250,
+                        height: 150,
+                        frameborder:0
                     });
-                    vid.appendTo('#apod_vid_id');
+                    vid.appendTo('#div-img');
                     //les vidéos ne s'affichent pas, essayer de trouver une solution
                 }
                 else{
                     const img = $('<img/>', {
                         src: result.url,
-                        width: "250px"
+                        height: "150px"
                     });
                     img.appendTo('#div-img');
                 }

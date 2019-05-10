@@ -7,23 +7,33 @@
     <title>Application NASA</title>
 </head>
 <body>
+<form class="form-row">
 
-    <input type="text" id="datepicker" placeholder="choisissez une date">
+    <div class="col-2"></div>
 
-    <a id="liste" href="#">Liste d'image</a>
-    <a id="effacer" href="#">Effacer</a>
+    <div class="input-group form-group col-4">
+        <input type="text" id="datepicker" placeholder="choisissez une date" class="form-control span6">
+    </div>
 
+    <div class="form-group col-2">
+        <a id="liste" href="#" class="btn btn-primary btn-block ">Liste d'image</a>
+    </div>
 
-    <div id="div-img"></div>
-    <iframe id="apod_vid_id" type="text/html" width="640" height="385" frameborder="0"></iframe>
+    <div class="form-group col-2">
+        <a id="effacer" href="#" class="btn btn-primary btn-block ">Effacer</a>
+    </div>
 
+    <div class="col-2"></div>
 
+</form>
+<div id="div-img" class="container"></div>
 
-    <script src="JS/jquery.js"></script>
-    <script src="JS/jquery-ui.js"></script>
-    <script src="JS/popper.js"></script>
-    <script src="JS/bootstrap.min.js.js"></script>
-    <script src="JS/script.js"></script>
+<script src="JS/jquery.js"></script>
+<script src="JS/jquery-ui.js"></script>
+<!--<script src="JS/popper.js"></script>-->
+<!--<script src="JS/bootstrap.min.js.js" type="application/javascript"></script>-->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="JS/script.js"></script>
 
 
 </body>
